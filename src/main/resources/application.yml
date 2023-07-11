@@ -1,0 +1,22 @@
+#感觉好像是自动VG走的最后一个环境的配置，没法定向选择？选择完后还是走的最后一个？
+server:
+  port: 8081
+spring:
+  profiles:
+    active:
+      on-profile: dev
+---
+server:
+  port: 8085
+spring:
+  profiles:
+    active:
+      on-profile: pro
+---
+server:
+  port: 8082
+spring:
+  profiles:
+    active:
+      on-profile: test
+
