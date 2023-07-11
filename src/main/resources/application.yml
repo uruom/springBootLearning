@@ -1,22 +1,3 @@
-#感觉好像是自动VG走的最后一个环境的配置，没法定向选择？选择完后还是走的最后一个？
-server:
-  port: 8081
-spring:
-  profiles:
-    active:
-      on-profile: dev
----
-server:
-  port: 8085
-spring:
-  profiles:
-    active:
-      on-profile: pro
----
-server:
-  port: 8082
-spring:
-  profiles:
-    active:
-      on-profile: test
-
+#配置文件到低能写什么--联系--
+#xxxAutoConfiguration:默认值。xxxProperties，我们就可以自定义配置了
+debug: true
